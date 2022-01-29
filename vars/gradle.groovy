@@ -6,7 +6,7 @@
 def call(stages){
 
     def stagesList = stages.split(";")
-    sh "echo ${stagesList}"
+    sh "echo Stages: ${stagesList}"
 
     sBuild()
     sSonar()
