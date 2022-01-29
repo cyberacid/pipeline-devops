@@ -4,6 +4,7 @@ def call() {
         environment {
             NEXUS_USER         = credentials('user-nexus')
             NEXUS_PASSWORD     = credentials('password-nexus')
+            TAREA              = ''
         }
         parameters {
             choice(
