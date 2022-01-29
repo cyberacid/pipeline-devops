@@ -4,6 +4,10 @@
 	ejecucion.call()
 */
 def call(stages){
+
+    def stagesList = stages.split(";")
+    sh "echo ${stagesList}"
+
     sBuild()
     sSonar()
     sCurl()
